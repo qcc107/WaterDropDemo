@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36578B971BA7B9E700A7FEF0 /* ZMDripView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36578B921BA7B9E700A7FEF0 /* ZMDripView.m */; };
+		36578B981BA7B9E700A7FEF0 /* ZMWaterDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36578B941BA7B9E700A7FEF0 /* ZMWaterDropView.m */; };
+		36578B991BA7B9E700A7FEF0 /* ZMWaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36578B961BA7B9E700A7FEF0 /* ZMWaterWaveView.m */; };
 		366C0BE01B9D354F000C964C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 366C0BDF1B9D354F000C964C /* main.m */; };
 		366C0BE31B9D354F000C964C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 366C0BE21B9D354F000C964C /* AppDelegate.m */; };
 		366C0BE61B9D354F000C964C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 366C0BE51B9D354F000C964C /* ViewController.m */; };
@@ -27,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36578B911BA7B9E700A7FEF0 /* ZMDripView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMDripView.h; sourceTree = "<group>"; };
+		36578B921BA7B9E700A7FEF0 /* ZMDripView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMDripView.m; sourceTree = "<group>"; };
+		36578B931BA7B9E700A7FEF0 /* ZMWaterDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMWaterDropView.h; sourceTree = "<group>"; };
+		36578B941BA7B9E700A7FEF0 /* ZMWaterDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMWaterDropView.m; sourceTree = "<group>"; };
+		36578B951BA7B9E700A7FEF0 /* ZMWaterWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMWaterWaveView.h; sourceTree = "<group>"; };
+		36578B961BA7B9E700A7FEF0 /* ZMWaterWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMWaterWaveView.m; sourceTree = "<group>"; };
 		366C0BDA1B9D354F000C964C /* WaterDropDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterDropDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366C0BDE1B9D354F000C964C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		366C0BDF1B9D354F000C964C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36578B901BA7B9E700A7FEF0 /* ZMWaterDropView */ = {
+			isa = PBXGroup;
+			children = (
+				36578B911BA7B9E700A7FEF0 /* ZMDripView.h */,
+				36578B921BA7B9E700A7FEF0 /* ZMDripView.m */,
+				36578B931BA7B9E700A7FEF0 /* ZMWaterDropView.h */,
+				36578B941BA7B9E700A7FEF0 /* ZMWaterDropView.m */,
+				36578B951BA7B9E700A7FEF0 /* ZMWaterWaveView.h */,
+				36578B961BA7B9E700A7FEF0 /* ZMWaterWaveView.m */,
+			);
+			path = ZMWaterDropView;
+			sourceTree = "<group>";
+		};
 		366C0BD11B9D354F000C964C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,7 @@
 		366C0BDC1B9D354F000C964C /* WaterDropDemo */ = {
 			isa = PBXGroup;
 			children = (
+				36578B901BA7B9E700A7FEF0 /* ZMWaterDropView */,
 				366C0BE11B9D354F000C964C /* AppDelegate.h */,
 				366C0BE21B9D354F000C964C /* AppDelegate.m */,
 				366C0BE41B9D354F000C964C /* ViewController.h */,
@@ -219,7 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36578B971BA7B9E700A7FEF0 /* ZMDripView.m in Sources */,
 				366C0BE61B9D354F000C964C /* ViewController.m in Sources */,
+				36578B991BA7B9E700A7FEF0 /* ZMWaterWaveView.m in Sources */,
+				36578B981BA7B9E700A7FEF0 /* ZMWaterDropView.m in Sources */,
 				366C0BE31B9D354F000C964C /* AppDelegate.m in Sources */,
 				366C0BE01B9D354F000C964C /* main.m in Sources */,
 			);
@@ -418,6 +444,7 @@
 				366C0BFF1B9D354F000C964C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		366C0C001B9D354F000C964C /* Build configuration list for PBXNativeTarget "WaterDropDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +453,7 @@
 				366C0C021B9D354F000C964C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

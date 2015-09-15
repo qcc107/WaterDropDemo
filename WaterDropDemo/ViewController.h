@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZMWaterDropView.h"
 
 @interface ViewController : UIViewController
 
-
+@property (weak, nonatomic) IBOutlet ZMWaterDropView * dropView;
 @end
 

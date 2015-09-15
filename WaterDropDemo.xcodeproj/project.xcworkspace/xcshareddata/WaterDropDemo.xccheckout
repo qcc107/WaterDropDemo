@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>89A0709C-7A63-4C9E-B35E-E4591370BC0A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WaterDropDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9A277BA4D1FEF9A027F7CA664C3A4EF541DDEBF0</key>
+		<string>https://github.com/qcc107/WaterDropDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WaterDropDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9A277BA4D1FEF9A027F7CA664C3A4EF541DDEBF0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/qcc107/WaterDropDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9A277BA4D1FEF9A027F7CA664C3A4EF541DDEBF0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9A277BA4D1FEF9A027F7CA664C3A4EF541DDEBF0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WaterDropDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

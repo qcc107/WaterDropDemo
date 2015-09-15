@@ -10,4 +10,10 @@
 
 @interface ZMWaterWaveView : UIView
 
+- (void)startWave;
+- (void)stopWave;
+
+- (void)splashWater;
+- (void)stopSplashWater;
+
 @end

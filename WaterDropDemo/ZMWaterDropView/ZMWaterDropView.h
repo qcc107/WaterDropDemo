@@ -10,4 +10,7 @@
 
 @interface ZMWaterDropView : UIView
 
+- (void)startDrop;
+- (void)stopDrop;
+
 @end
