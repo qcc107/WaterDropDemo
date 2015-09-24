@@ -33,6 +33,12 @@
 @implementation ZMWaterWaveView
 
 
+- (void)setFrame:(CGRect)frame
+{
+    [super setFrame:frame];
+    
+    [self loadWaveLayers];
+}
 
 #pragma mark - Splash water
 - (void)splashWater
@@ -123,14 +129,6 @@
 {
     [self stopWave];
     
-    _waveWidth = self.bounds.size.width;
-    _variable = 1.6;
-    _increase = NO;
-    
-    _offsetX = 0;
-    
-    [self loadWaveLayers];
-    
     _frameTimer = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateVibrations:)];
     _frameTimer.frameInterval = 2;
     [_frameTimer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
@@ -140,6 +138,16 @@
 
 - (void)loadWaveLayers
 {
+    
+    if (CGRectEqualToRect(self.frame, CGRectZero)) {
+        return;
+    }
+    
+    _waveWidth = self.bounds.size.width;
+    _variable = 1.6;
+    _increase = NO;
+    
+    _offsetX = 0;
     
     if (!_waveLayers) {
         
@@ -164,8 +172,9 @@
             
             [_waveLayers addObject:waveLayer];
         }
+        
+        [self updateVibrations:nil];
     }
-
 
 }
 
@@ -174,14 +183,6 @@
     if (_frameTimer) {
         [_frameTimer invalidate];
         _frameTimer = nil;
-    }
-    
-    if (_waveLayers && [_waveLayers count] > 0) {
-        [_waveLayers enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            [obj removeFromSuperlayer];
-        }];
-        
-        _waveLayers = nil;
     }
 
 }

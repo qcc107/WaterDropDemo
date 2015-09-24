@@ -104,6 +104,7 @@
                                                  repeats:YES];
     
     [self resetDrop];
+    
     [_waveView startWave];
 
 }
@@ -126,8 +127,9 @@
                                    20,
                                    _dripView.bounds.size.width,
                                    _dripView.bounds.size.height)];
-    [self addSubview:_dripView];
 
+    [_dripView setHidden:NO];
+    
     [self resetBeahviors];
 }
 
@@ -166,7 +168,7 @@
 {
     [_animator removeAllBehaviors];
     
-    [_dripView removeFromSuperview];
+    [_dripView setHidden:YES];
     [_waveView splashWater];
 }
 
